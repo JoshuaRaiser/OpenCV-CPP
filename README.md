@@ -24,7 +24,7 @@ Release x64
 
 ![](erro-opencv_world320.dll.PNG)
 
--> mova "opencv\build\x64\vc14\bin" para "opencv-v3.2.0-vc14-app\x64\Release"
+-> mova "opencv\build\x64\vc14\bin\opencv_world320.dll" para "opencv-v3.2.0-vc14-app\x64\Release"
 
 ## Funções
 * Mat aplicaFiltro(Mat imagem, int indice, int cor)
