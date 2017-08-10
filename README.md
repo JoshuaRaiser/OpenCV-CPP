@@ -22,7 +22,7 @@ Release x64
 
 - Erro identificado na execução
 
-![](erro-opencv_world320.dll.png)
+![](erro-opencv_world320.dll.PNG)
 
 -> mova "opencv\build\x64\vc14\bin" para "opencv-v3.2.0-vc14-app\x64\Release"
 
@@ -51,4 +51,4 @@ waitKey(0); // aguarda um clique de tecla para encerrar a aplicação
 ```
 ![](random-image.jpg)
 
-![](exemplos.png)
+![](exemplos.PNG)
