@@ -115,4 +115,8 @@ Proporcionam excelentes resultados na redução de ruído, com borramento consid
 Os filtros de mediana são particularmente eficazes na presença de ruído impulsivo, também chamado de ruído sal e pimenta, em razão de sua aparência, como pontos brancos e pretos sobrepostos em uma imagem.
 
 *Aguçamento*
+
 Objetiva salientar transições de intensidade para o aumento da nitidez de uma imagem.
+
+
+*Agradecimento especial à [wguilen (William Guilen)](https://github.com/wguilen).*
