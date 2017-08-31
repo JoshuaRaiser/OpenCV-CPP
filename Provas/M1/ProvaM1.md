@@ -118,5 +118,6 @@ Os filtros de mediana são particularmente eficazes na presença de ruído impul
 
 Objetiva salientar transições de intensidade para o aumento da nitidez de uma imagem.
 
+##
 
 *Agradecimento especial à [wguilen (William Guilen)](https://github.com/wguilen).*
