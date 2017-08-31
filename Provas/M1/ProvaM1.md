@@ -13,7 +13,8 @@ Uma imagem pode ser definida como uma função bidimensional f(x,y), onde x e y 
 
 ### Operações lineares
 
-> Negativo
+> **Negativo**
+
 – Inverter as cores da imagem
 
 ```
@@ -22,7 +23,7 @@ s = L - 1 - r
 
 Esse tipo de processamento é particularmente adequado para realçar detalhes brancos ou cinza incorporados a regiões escuras de uma imagem, especialmente.
 
-> Função logarítmica (clareia a imagem)
+> **Função logarítmica (clareia a imagem)**
 
 ```
 s = c log(1 + r), onde:
@@ -35,7 +36,8 @@ O oposto se aplica aos valores mais altos de níveis de intensidade de entrada.
 Utilizamos uma transformação desse tipo para expandir os valores de pixels mais escuros em uma imagem ao mesmo tempo em que comprimimos os valores de nível mais alto.
 Este tipo de operador é aplicado em imagens que tem uma concentração maior nos pixels mais escuros, esticando esta faixa enquanto comprime a faixa mais clara.
 
-> Potência (escurece a imagem)
+> **Potência (escurece a imagem)**
+
 s = cr^γ, sendo c e γ constantes positivas, γ define a curva de distribuição de pixels e c garante o intervalo de saída ser no mesmo intervalo da entrada.
 
 ```
@@ -51,12 +53,13 @@ Este tipo de operador é aplicado em imagens que tem uma concentração maior no
 Diferente do log, onde a base somente muda a escala, o valor do expoente também modifica a curva de transformação dos pixels.
 
 
-> Função Linear por Partes
+> **Função Linear por Partes**
 
 Estas funções procuram aumentar o contraste de uma imagem de forma linear, diferentemente dos métodos anteriores.
-Utilizaremos três formas diferentes de aplicação: Limiarização, alargamento de contraste e janelamento.
+Utilizaremos três formas diferentes de aplicação: *Limiarização, alargamento de contraste e janelamento*.
 
 *Limiarização*
+
 Definir um limite e transformar a imagem em preto e branco
 O processo de limiarização busca dividir uma imagem em somente 1 bit de informação de cor, preto ou branco.
 Este processo busca separar a imagem em duas categorias distintas e é muito utilizado como uma etapa inicial na tarefa de segmentação de imagem.
@@ -73,6 +76,7 @@ Ele procura o menor valor de intensidade de pixel na imagem e o define como 0, d
 Este processo afeta imagens que não utilizam todo o espectro de intensidade possível.
 
 *Janelamento*
+
 O processo de janelamento utiliza a função a seguir:
 
 ```
@@ -87,7 +91,8 @@ Este processo consegue trabalhar com imagens que já possuem os limites de inten
 Diferente da limiarização, este processo consegue manter detalhes entre os limiares da função, inclusive aumentando seu contraste.
 
 
-> Filtros espaciais
+> **Filtros espaciais**
+
 - O filtro espacial consiste em:
 	- Uma vizinhança (normalmente um pequeno retângulo)
 	- Uma operação predefinida realizada sobre os pixels da imagem incluídos na vizinhança.
@@ -96,10 +101,12 @@ A filtragem cria um novo pixel com coordenadas iguais às coordenadas do centro 
 
 Usa-se uma matriz conhecida como máscara / kernel / janela / template.
 
-> Filtros de suavização
+> **Filtros de suavização**
+
 Usados para borramento e redução de ruído.
 
 *Mediana (algoritmo de suavização não linear)*
+
 Substitui o valor de um pixel pela mediana dos valores de intensidade na vizinhança desse pixel (o valor original do pixel é incluído no cálculo da mediana). 
 Proporcionam excelentes resultados na redução de ruído, com borramento consideravelmente menor do que filtros lineares de suavização de tamanho similar.
 Os filtros de mediana são particularmente eficazes na presença de ruído impulsivo, também chamado de ruído sal e pimenta, em razão de sua aparência, como pontos brancos e pretos sobrepostos em uma imagem.
