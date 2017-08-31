@@ -6,8 +6,11 @@ Uma imagem pode ser definida como uma função bidimensional f(x,y), onde x e y 
 ### Algoritmos iniciais
 
 *Escala de cinza* – Transformar a imagem colorida em escala de cinza
+
 *Média* – a soma dos 3 canais de cor dividido por 3
+
 *Brilho* – aplica peso de acordo com a percepção de brilho de cada cor, vermelho * 0.21 + verde * 0.72 + azul * 0.07
+
 *Isolar Canal* – Retorna em escala de cinza somente um dos três canais de cor
 
 
