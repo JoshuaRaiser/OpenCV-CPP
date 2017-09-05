@@ -1,7 +1,8 @@
-﻿  opencv-pdi.cpp
+﻿  Kuwahara.cpp
+c:\users\joshua raiser\documents\github\opencv-cpp\opencv-pdi\opencv-pdi\KuwaharaRegiao.h(78): warning C4244: 'return': conversão de 'double' para 'uchar', possível perda de dados
   Gerando código
-  7 of 206 functions ( 3.4%) were compiled, the rest were copied from previous compilation.
+  0 of 209 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finalizada a geração de código
   opencv-pdi.vcxproj -> C:\Users\Joshua Raiser\Documents\github\OpenCV-CPP\opencv-pdi\x64\Release\opencv-pdi.exe

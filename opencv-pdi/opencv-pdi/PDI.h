@@ -22,7 +22,7 @@ public:
 
 	static cv::Mat suavizacaoMedia(cv::Mat imagemBase, Matriz kernel);
 	static cv::Mat suavizacaoMediana(cv::Mat imagemBase, int tamanhoKernel);
-
+	
 	static Matriz eeCustom(int tamX, int tamY, ...);
 
 	static Matriz laplaciano();
