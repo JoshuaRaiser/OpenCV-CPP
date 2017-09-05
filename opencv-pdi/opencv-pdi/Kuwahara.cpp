@@ -41,12 +41,12 @@ KuwaharaRegiao Kuwahara::getRegioes(int x, int y) {
 
 	uchar *data = imagem.data;
 
-	// Atualiza data para cada regi„o, os pixels fora dos limites da imagem s„o ignorados
+	// Atualiza data para cada regi√£o, os pixels fora dos limites da imagem s√£o ignorados
 	/*
 	 1     1      1|2      2     2
 	 1     1      1|2      2     2
 	1|3   1|3   1|2|3|0   2|0   2|0
-	 3	   3      3|0      0     0
+	 3     3      3|0      0     0
 	 3     3      3|0      0     0
 	*/
 
