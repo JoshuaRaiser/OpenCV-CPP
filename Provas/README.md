@@ -4,4 +4,4 @@
 
 - Prova 2: [M2>ProvaM2.dm](M2/ProvaM2.md)
 
-- Prova 3: *ainda não*
+- Prova 3: [M3>ProvaM3.dm](M2/ProvaM3.md)
