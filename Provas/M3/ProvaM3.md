@@ -56,7 +56,7 @@ evita que a água saia da barragem concluída conforme o nível de inundação a
 que são as fronteiras da **segmentação** desejadas, são componentes conectados. Em oturas palavras, esse método elimina os problemas
 de linhas de segmentação descontínuas.
 
-## Crescimento de Região
+## Crescimento de Região.
 
 - É um procedimento que **agrupa os pixels** ou as sub-regiões em regiões maiores com base em critérios predefinidos para o crescimento.
 
@@ -125,21 +125,23 @@ e o **Oeste** do pixel atual (assumindo que sejam 8-conectividade). A 4-conectiv
 
 - Assumindo 4-conectividade, as condições para verificar são:
 
+```
 O pixel para a esquerda (Oeste) tem o mesmo valor que o pixel atual?
-	**Sim** - Estamos na mesma região. Atribua o mesmo rótulo ao pixel atual.
-	**Não** - Verifique a próxima condição.
-	
+	Sim - Estamos na mesma região. Atribua o mesmo rótulo ao pixel atual.
+	Não - Verifique a próxima condição.
+
 Os dois pixels para o Norte e Oeste do pixel atual têm o mesmo valor que o pixel atual mas não mesmo rótulo?
-	**Sim** - Sabemos que os pixels Norte e Oeste pertencem à mesma região e devem ser fundidos. Atribua o pixel atual
-	o mínimo das etiquetas Norte e Oeste e registre seu relacionamento de equivalência.
-	**Não** - Verifique a próxima condição.
-	
+	Sim - Sabemos que os pixels Norte e Oeste pertencem à mesma região e devem ser fundidos.
+	Atribua o pixel atual o mínimo das etiquetas Norte e Oeste e registre seu relacionamento de equivalência.
+	Não - Verifique a próxima condição.
+
 O pixel à esquerda (Oeste) tem um valor diferente e o do Norte o mesmo valor que o pixel atual?
-	**Sim** - Atribua a etiqueta do pixel Norte ao pixel atual.
-	**Não** - Verifique a próxima condição.
-	
+	Sim - Atribua a etiqueta do pixel Norte ao pixel atual.
+	Não - Verifique a próxima condição.
+
 Os vizinhos do pixel Norte e do Oeste têm valore de pixel diferentes dos pixels atuais?
-	**Sim** - Crie um novo ID de etiqueta e atribua-o ao pixel atual.
+	Sim - Crie um novo ID de etiqueta e atribua-o ao pixel atual.
+```
 
 O algoritmo trabalha aplicando estes testes para cada pixel na imagem que pertence à um objeto (pixel branco).
 Trabalha com uma estrutura do mesmo tamanho da imagem que armazena cada rótulo, quando um pixel é rotulado, o
@@ -147,71 +149,3 @@ rótulo definido pelas condições acima é aplicado nesta estrutura.
 
 Além dos vetores de rótulos, temos um vetor de equivalências, no início cada rótulo é equivalente a ele mesmo,
 o que muda quando élocalizado um pixel que faz fronteira pixels de dois rótulos diferentes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
