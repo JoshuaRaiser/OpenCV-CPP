@@ -103,14 +103,14 @@ em uma primeira estratégia de busca em profundidade.
 
 - O algoritmo é dado da seguinte forma:
 
-	1 - Comece a partir do primeiro pixel na imagem. Configure o rótulo atual para 1.
-	2 - Se esse pixel for um pixel de primeiro plano e ainda não estiver rotulado, dê 
-	o rótulo atual e adicione-o como o primeiro elemento em uma fila. Se for um pixel
-	de fundo ou já foi rotulado, repita para o próximo pixel na imagem.
-	3 - Destaque um elemento da fila e veja seus vizinhos (com base em qualquer tipo 
-	de conectividade). Se um vizinho é um pixel de primeiro plano e ainda não está rotulado,
-	dê o rótulo atual e adicione-o à fila. Repita até que não hava mais elementos na fila.
-	4 - Vá para o próximo pixel na imagem e incremente o rótulo atual em 1.
+		1 - Comece a partir do primeiro pixel na imagem. Configure o rótulo atual para 1.
+		2 - Se esse pixel for um pixel de primeiro plano e ainda não estiver rotulado, dê 
+		o rótulo atual e adicione-o como o primeiro elemento em uma fila. Se for um pixel
+		de fundo ou já foi rotulado, repita para o próximo pixel na imagem.
+		3 - Destaque um elemento da fila e veja seus vizinhos (com base em qualquer tipo 
+		de conectividade). Se um vizinho é um pixel de primeiro plano e ainda não está rotulado,
+		dê o rótulo atual e adicione-o à fila. Repita até que não hava mais elementos na fila.
+		4 - Vá para o próximo pixel na imagem e incremente o rótulo atual em 1.
 	
 > Two-Pass Algorithm: Algoritmo de duas passagens
 
